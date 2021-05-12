@@ -9,10 +9,10 @@ let password = "12345678"
 
 //1
 //User Register test
-describe('POST /api/users/register', function() {
+describe('POST /api/register', function() {
     it('it sould post the user info', function(done) {
       request(app)
-        .post('/api/users/register')
+        .post('/api/register')
         .send({
             first_name: randName,
             username: username,
@@ -30,10 +30,10 @@ describe('POST /api/users/register', function() {
 
 //2
 //User Login test
-describe('POST /api/users/login', function() {
+describe('POST /api/login', function() {
     it('it sould post the user login info', function(done) {
       request(app)
-        .post('/api/users/login')
+        .post('/api/login')
         .send({
             username: username,
             password: password

@@ -9,7 +9,7 @@ const fs = require('fs')
 const cors = require('cors')
 const app = express();
 let server = null;
-process.env.NODE_ENV = "production"//"development"
+process.env.NODE_ENV = "development"//"production"//
 
 const startApp = async () => {
 

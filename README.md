@@ -20,18 +20,11 @@
 
 - Info
   - API Url: http://localhost:5000/api/
-  - Events emits to this client: http://localhost:5000/
-  - Events are defined in config/socket.config.js
   - JWT config is defined in auth.config.js
   - Database schema describe image is under docs dir
-  - forever-monitoer installed to avoid stop application in case of crash, I used try catch block but we must needs this kind of package to keep app running in case of someting bad happened.
+  - forever-monitoer installed to avoid stop application
   - Node cluster module also configured for high scalability and perfomance.
 
 - API Endpoints
-  - Register user : ```/api/users/register```  , POST parameters: ```full_name, email, password```
-  - Login user: ```/api/users/login```, POST params: ```email, password```, it will return a auth token(JWT token) which you can use for later create tower and other secure routes usign POSTMAN Authorizaion Bearer token or x-access-token in headers 
-
-- Run Test: 
-  - BlackBox Testing, to make sure api endpoints are working.
-    you should see output: xx passing (xxms)
-  - npm test
+  - Register user : ```/api/register```  , POST parameters: ```username, password, confirm_password```
+  - Login user: ```/api/login```, POST params: ```username, password```, it will return a auth token(JWT token) 
