@@ -1,6 +1,5 @@
 ## Local setup
 - Prerequisite
-    - Make sure Redis server is intalled on your machine
     - sequelize-cli packages is installed 
 
 - Git Clone
@@ -12,8 +11,6 @@
 - Install dependencies
   - cd backend-server-vpn
   - npm install
-  - Run migration: npx sequelize-cli db:migrate
-  - Run seeder: npx sequelize-cli db:seed:all
 
 - Run
   - node server
